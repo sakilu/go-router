@@ -8,7 +8,6 @@ https://github.com/astaxie/beego <br />
 
 
 <code>
-func main() {
 	// 初始化路由器
 	var myRouter router.ControllerRegistor
 
@@ -26,5 +25,5 @@ func main() {
 	if err != nil {
 		fmt.Println(err)
 	}
-}
+
 </code>
