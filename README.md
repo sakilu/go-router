@@ -10,7 +10,7 @@ https://github.com/astaxie/beego <br />
 <code>
 	// 初始化路由器
 	var myRouter router.ControllerRegistor
-
+	
 	// 註冊網頁靜態頁面路徑
 	myRouter.SetStaticPath("/", "/html/")
 
@@ -21,9 +21,6 @@ https://github.com/astaxie/beego <br />
 	http.HandleFunc("/", myRouter.ServeHTTP)
 
 	open.Run("http://127.0.0.1:8123")
-	err := http.ListenAndServe(":8123", nil)
-	if err != nil {
-		fmt.Println(err)
-	}
+	http.ListenAndServe(":8123", nil)
 
 </code>
