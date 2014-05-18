@@ -8,16 +8,6 @@ https://github.com/astaxie/beego <br />
 
 
 <code>
-package main
-
-import (
-	"fmt"
-	"github.com/sakilu/go-router"
-	"github.com/skratchdot/open-golang/open"
-	"net/http"
-	"wizard/controllers"
-)
-
 func main() {
 	// 初始化路由器
 	var myRouter router.ControllerRegistor
