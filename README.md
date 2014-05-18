@@ -10,7 +10,6 @@ https://github.com/astaxie/beego <br />
 <code>
 	// 初始化路由器
 	var myRouter router.ControllerRegistor
-	
 	// 註冊網頁靜態頁面路徑
 	myRouter.SetStaticPath("/", "/html/")
 
