@@ -6,8 +6,7 @@ go-router
 https://github.com/astaxie/beego <br />
 </p>
 
-
-<code>
+<pre>
 	// 初始化路由器
 	var myRouter router.ControllerRegistor
 	// 註冊網頁靜態頁面路徑
@@ -21,5 +20,4 @@ https://github.com/astaxie/beego <br />
 
 	open.Run("http://127.0.0.1:8123")
 	http.ListenAndServe(":8123", nil)
-
-</code>
+</pre>
