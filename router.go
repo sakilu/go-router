@@ -106,7 +106,7 @@ func (p *ControllerRegistor) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 			if err != nil || finfo.IsDir() {
 				continue
 			}
-			if strings.HasSuffix(key, ".html") || strings.HasSuffix(key, ".htm") {
+			if strings.HasSuffix(file, ".html") || strings.HasSuffix(file, ".htm") {
 				w.Header().Set("Content-Type", "text/html")
 			}
 			http.ServeFile(w, r, file)
